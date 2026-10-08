@@ -1,0 +1,257 @@
+/* Page */
+.leave-page {
+  padding: 25px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* Header */
+.leave-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.leave-title h2 {
+  font-size: 34px;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.leave-title p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Card */
+.leave-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Top Bar */
+.leave-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 320px;
+  padding: 11px 15px;
+  border: 1px solid #d5d9e2;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.search-box:focus {
+  border-color: #4f6df5;
+}
+
+/* Button */
+.add-btn {
+  background: #4f6df5;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.add-btn:hover {
+  background: #3655e0;
+}
+
+/* Table */
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table thead {
+  background: #f7f8fb;
+}
+
+.leave-table th {
+  text-align: left;
+  padding: 16px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.leave-table td {
+  padding: 16px;
+  border-top: 1px solid #ececec;
+  color: #555;
+}
+
+.leave-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Status */
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+}
+
+.pending {
+  background: #f59e0b;
+}
+
+.approved {
+  background: #22c55e;
+}
+
+.rejected {
+  background: #ef4444;
+}
+
+/* Action */
+
+.action-btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-btn {
+  color: #4f6df5;
+}
+
+.delete-btn {
+  color: #ef4444;
+}
+
+/* Modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 430px;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d8dce7;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4f6df5;
+}
+
+/* Modal Buttons */
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #4f6df5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #3655e0;
+}
+
+.cancel-btn:hover {
+  background: #d1d5db;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .leave-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .modal {
+    width: 95%;
+  }
+
+  .leave-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.dashboard-container{
+    display:flex;
+    min-height:100vh;
+}
+
+.main-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.content{
+    flex:1;
+    padding:20px;
+    background:#f5f7fb;
+}

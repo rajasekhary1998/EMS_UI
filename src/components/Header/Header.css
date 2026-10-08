@@ -1,0 +1,51 @@
+.header {
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-toggle {
+  font-size: 22px;
+  cursor: pointer;
+  color: #1e293b;
+}
+
+.menu-toggle:hover {
+  color: #2563eb;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.profile-icon {
+  font-size: 32px;
+  color: #2563eb;
+}

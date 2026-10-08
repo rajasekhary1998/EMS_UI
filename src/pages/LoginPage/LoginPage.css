@@ -1,0 +1,311 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  background: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 90vh;
+
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT PANEL */
+
+.login-left {
+  background: #f5f7ff;
+  padding: 50px 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Important */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: fit-content;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a8a; /* Dark blue */
+  margin-bottom: 30px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: #2563eb; /* Bright blue */
+  flex-shrink: 0;
+}
+
+.logo svg {
+  font-size: 28px;
+}
+
+.left-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0c1742;
+}
+
+.left-content h1 span {
+  color: #2c5cff;
+}
+
+.left-content p {
+  margin-top: 18px;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #64748b;
+  max-width: 520px;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 520px;
+
+  height: auto;
+
+  margin-top: 30px;
+
+  object-fit: contain;
+}
+
+/* RIGHT PANEL */
+
+.login-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-box h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin-top: 6px;
+  margin-bottom: 28px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+.login-box label {
+  display: block;
+
+  margin-bottom: 8px;
+  margin-top: 16px;
+
+  color: #334155;
+  font-weight: 500;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+
+  color: #94a3b8;
+}
+
+.input-group input {
+  width: 100%;
+  height: 52px;
+
+  border: 1px solid #dbe2f0;
+  border-radius: 12px;
+
+  padding-left: 50px;
+  padding-right: 15px;
+
+  font-size: 15px;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2c5cff;
+  box-shadow: 0 0 0 3px rgba(44, 92, 255, 0.1);
+}
+
+.error {
+  margin-top: 5px;
+
+  color: #ef4444;
+  font-size: 12px;
+}
+
+.login-options {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0 !important;
+
+  font-size: 14px;
+  color: #475569;
+}
+
+.remember input {
+  width: 16px;
+  height: 16px;
+}
+
+.login-options a {
+  color: #2c5cff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+.signin-btn {
+  width: 100%;
+  height: 52px;
+
+  margin-top: 24px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #2c5cff;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  background: #1d49e0;
+}
+
+.signin-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .login-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    padding: 40px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .login-page {
+    padding: 12px;
+  }
+
+  .login-wrapper {
+    border-radius: 18px;
+    min-height: auto;
+  }
+
+  .login-right {
+    padding: 25px;
+  }
+
+  .login-box h2 {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .input-group input {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .signin-btn {
+    height: 48px;
+  }
+
+  .login-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
