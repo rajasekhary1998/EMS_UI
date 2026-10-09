@@ -7,8 +7,6 @@ import Footer from "../../components/Footer/Footer";
 
 import {
   FaPlus,
-  FaEdit,
-  FaTrash,
   FaClipboardList,
 } from "react-icons/fa";
 

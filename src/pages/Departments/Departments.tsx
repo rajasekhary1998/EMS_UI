@@ -5,8 +5,6 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import {
   FaPlus,
-  FaEdit,
-  FaTrash,
   FaBuilding,
 } from "react-icons/fa";
 

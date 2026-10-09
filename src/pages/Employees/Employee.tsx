@@ -16,7 +16,7 @@ import {
 import type { Employee } from "../../types/employee";
 import { employeeSchema } from "../../validations/employeeValidation";
 
-import { FaEdit, FaTrash,FaUsers,FaPlus } from "react-icons/fa";
+import { FaUsers,FaPlus } from "react-icons/fa";
 
 const Employees = () => {
   const [collapsed, setCollapsed] = useState(false);
